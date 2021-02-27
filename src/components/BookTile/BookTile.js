@@ -6,7 +6,7 @@ function GifTile({ data }) {
   const [image, setImage] = useState("");
 
   useEffect(() => {
-    setImage("/slices/" + data["poster-image"]);
+    setImage("/Slices/" + data["poster-image"]);
   }, [data["poster-image"]]);
 
   const onError = () => {

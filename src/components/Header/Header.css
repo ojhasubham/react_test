@@ -1,0 +1,25 @@
+.header-container {
+  height: 64px;
+  z-index: 999;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.back-icon,
+.search-icon {
+  height: 16px;
+}
+
+.search-input {
+  background: black;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  width: 100%;
+  color: white;
+  height: 20px;
+}
+
+input:focus {
+  outline: none;
+}

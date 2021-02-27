@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import { missingPostersSrc } from "../../constants";
 
+import "./bookTile.css";
+
 function GifTile({ data }) {
   const [image, setImage] = useState("");
 

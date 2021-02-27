@@ -9,7 +9,7 @@ import Header from "../../components/Header";
 
 import "./home.css";
 
-function Home({ booksData, isFetching, searchStr }) {
+function Home({ booksData, searchStr }) {
   useEffect(() => {
     store.dispatch(getBooksAction);
   }, []);
@@ -18,8 +18,7 @@ function Home({ booksData, isFetching, searchStr }) {
     function handleScroll() {
       if (
         Math.ceil(window.innerHeight + document.documentElement.scrollTop) !==
-          document.documentElement.offsetHeight ||
-        isFetching
+        document.documentElement.offsetHeight
       )
         return;
 
@@ -54,7 +53,6 @@ function Home({ booksData, isFetching, searchStr }) {
 
 const mapStateToProps = (state) => ({
   booksData: state.books,
-  isFetching: state.appState.isFetching,
   searchStr: state.appState.searchStr,
 });
 

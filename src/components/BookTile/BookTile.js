@@ -18,7 +18,7 @@ function BookTile({ data }) {
   if (data)
     return (
       <div>
-        <img className="w-100 mb-1" src={image} onError={onError} />
+        <img alt="" className="w-100 mb-1" src={image} onError={onError} />
         <p className="book-name text-white">{data.name}</p>
       </div>
     );

@@ -58,6 +58,7 @@ function Header({ title, searchStr }) {
     >
       <div className="d-flex align-items-center w-100">
         <img
+          alt=""
           src="/Slices/Back.png"
           className="back-icon mr-2"
           onClick={onBackClick}
@@ -75,6 +76,7 @@ function Header({ title, searchStr }) {
       </div>
       <div className="d-flex align-items-center">
         <img
+          alt=""
           src="/Slices/search.png"
           className="search-icon"
           onClick={onSearchClick}

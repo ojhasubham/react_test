@@ -4,7 +4,7 @@ import { missingPostersSrc } from "../../constants";
 
 import "./bookTile.css";
 
-function GifTile({ data }) {
+function BookTile({ data }) {
   const [image, setImage] = useState("");
 
   useEffect(() => {
@@ -26,4 +26,4 @@ function GifTile({ data }) {
   return null;
 }
 
-export default GifTile;
+export default BookTile;

@@ -12,9 +12,7 @@ import "./home.css";
 function Home({ booksData, searchStr }) {
   useEffect(() => {
     store.dispatch(getBooksAction);
-  }, []);
 
-  useEffect(() => {
     function handleScroll() {
       if (
         Math.ceil(window.innerHeight + document.documentElement.scrollTop) !==
